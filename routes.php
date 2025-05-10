@@ -8,11 +8,12 @@ return [
     '/search' => 'controllers/blog/search.php',
 
     '/admin' => 'controllers/admin/login.php',
-    '/admin/users' => 'controllers/admin/index.php',
+    '/admin/dashboard' => 'controllers/admin/index.php',
     '/admin/allposts' => 'controllers/admin/allpost.php',
-    '/admin/newpost' => 'controllers/admin/newpost.php',
+    '/admin/posts/create' => 'controllers/admin/newpost.php',
     '/admin/category' => 'controllers/admin/category.php',
-    '/admin/comment' => 'controllers/admin/comment.php'
+    '/admin/comment' => 'controllers/admin/comment.php',
+    '/admin/logout' => 'controllers/admin/logout.php'
 
     
 

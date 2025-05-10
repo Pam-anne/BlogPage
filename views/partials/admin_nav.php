@@ -8,7 +8,7 @@
         <nav class="mt-5 px-3">
             <div class="space-y-1">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="/admin/users" class="<?= urlIs('/admin/users') ? "bg-gray-900 text-white" : "text-gray-300" ?>group flex items-center px-2 py-2 text-base font-medium rounded-md  text-white">
+                <a href="/admin/dashboard" class="<?= urlIs('/admin/users') ? "bg-gray-900 text-white" : "text-gray-300" ?>group flex items-center px-2 py-2 text-base font-medium rounded-md  text-white">
                     <svg class="mr-4 h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" data-slot="icon">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                     </svg>
@@ -22,13 +22,6 @@
                     All Posts
                 </a>
 
-                <a href="/admin/newpost" class=" <?= urlIs('/admin/newpost') ? "bg-gray-900 text-white" : "text-gray-300" ?>group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-300 hover:bg-gray-700 hover:text-white">
-                    <svg class="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                    </svg>
-                    New Post
-                </a>
-
                 <a href="/admin/category" class=" <?= urlIs('/admin/category') ? "bg-gray-900 text-white" : "text-gray-300" ?>group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-300 hover:bg-gray-700 hover:text-white">
                     <svg class="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" data-slot="icon">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
@@ -36,12 +29,7 @@
                     Categories
                 </a>
 
-                <a href="/admin/comment" class="<?= urlIs('/admin/comment') ? "bg-gray-900 text-white" : "text-gray-300" ?>group flex items-center px-2 py-2 text-base font-medium rounded-md text-gray-300 hover:bg-gray-700 hover:text-white">
-                    <svg class="mr-4 h-6 w-6 text-gray-400 group-hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                    </svg>
-                    Comments
-                </a>
+            
 
         
             </div>
@@ -66,7 +54,7 @@
                 </div>
                 <div class="mt-3 space-y-1 px-2">
                 <?php if ($_SESSION['user'] ?? false): ?>
-                    <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Log out</a>
+                    <a href="/admin/logout" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Log out</a>
                     <?php endif;?>
                 </div>
             </div>
