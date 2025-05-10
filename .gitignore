@@ -1,0 +1,24 @@
+# Node modules (if you're using Tailwind via npm)
+node_modules/
+
+# Tailwind or build output (optional)
+dist/
+build/
+*.css.map
+
+
+
+# Environment files
+.env
+.env.*
+
+
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.log
+
+# Cache or temporary files
+*.cache
+*.tmp
